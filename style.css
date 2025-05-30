@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  font-family: "KoHo", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 500;
+}
+
+header {
+  align-items: center;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3em;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.niveaukiezen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center; /* https://www.w3schools.com/cssref/css_pr_place-items.php */
+  margin-top: 5em;
+  cursor: pointer;
+}
+
+.niveaukiezen img {
+  height: 350px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.niveaukiezen img:hover {
+  transform: scale(1.13);
+}
+
+#timer {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#stopKnop {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: red;
+}
+
+.memorie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+  place-items: center;
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+.memorie img {
+  height: 250px;
+  width: 190px;
+  cursor: pointer;
+}
+
+.pSeconden span {
+  font-size: 2em;
+}
+
+.knopStart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.startKnop {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  background-color: #1b3142;
+  border: none;
+  color: white;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.startKnop:hover {
+  transform: scale(1.2);
+}
+
+/* Dialog met behulp van https://www.w3schools.com/tags/tag_dialog.asp en 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog */
+
+dialog {
+  padding: 2em;
+  text-align: center;
+  border-radius: 1em;
+  border-style: none;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(0.5em);
+}
+
+button {
+  padding: 2em;
+  background-color: #1b3142;
+  color: white;
+  border-style: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 1em;
+  font-size: 1em;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#gewonnenVenster h1 {
+  color: green;
+}
+
+#gameOverVenster h1 {
+  color: red;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error img {
+  height: 500px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FlipFinder - niveau 1</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>FlipFinder</h1>
+      <h2>Niveau 1 - dieren</h2>
+      <p id="timer" class="pSeconden">
+        Tijd over: <span id="timerAftellen">25</span> seconden
+      </p>
+      <a id="stopKnop" href="index.html">Stoppen</a>
+      <p id="score" class="pScore">Score: <span id="scoreTellen">0/5</span></p>
+    </header>
+
+    <section class="memorie">
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+
+      <div>
+        <img
+          src="images/dicht.jpg"
+          alt="foto van een gesloten memorie-kaartje"
+        />
+      </div>
+    </section>
+
+    <dialog id="gewonnenVenster">
+      <h1>Je hebt gewonnen!</h1>
+      <p>
+        Goed gedaan! Je hebt binnen de tijd de memorie opgelost. Wil je deze nog
+        een keer spelen of een ander niveau proberen?
+      </p>
+      <div>
+        <button onclick="window.location.href = 'index.html'">
+          Ander niveau
+        </button>
+        <button onclick="location.reload()">Opnieuw spelen</button>
+      </div>
+    </dialog>
+
+    <dialog id="gameOverVenster">
+      <h1>Game Over!</h1>
+      <p>
+        Helaas... Je hebt de memorie niet binnen de tijd op kunnen lossen. Wil
+        je het opnieuw proberen of wil je terug naar home?
+      </p>
+      <button onclick="window.location.href = 'index.html'">Home</button>
+      <button onclick="location.reload()">Opnieuw spelen</button>
+    </dialog>
+
+    <script src="index.js"></script>
+  </body>
+</html>
